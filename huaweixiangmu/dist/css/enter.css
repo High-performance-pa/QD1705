@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: gray; }
+
+.customer-header {
+  max-width: 998px;
+  width: auto;
+  height: 67px;
+  margin: 0 auto;
+  border: 0;
+  position: relative; }
+
+.main-logo {
+  left: 2px;
+  float: left;
+  width: 161px;
+  margin-top: 10px; }
+
+.main-logo img {
+  float: left; }
+
+.website-name {
+  float: left;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333333;
+  font-weight: normal;
+  margin-left: 40px;
+  width: 100px;
+  height: 25px;
+  border-left: 1px solid black;
+  padding-left: 25px; }
+
+.loginform {
+  width: 100%;
+  background-color: #081638; }
+
+.login_adBg {
+  background: url("../images/login_default_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 590px;
+  width: 998px;
+  margin: 0 auto; }
+
+.login-right {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 530px;
+  position: relative;
+  width: 300px;
+  float: right;
+  background-color: #FFFFFF; }
+
+.h {
+  width: 100%;
+  margin: 34px auto;
+  text-align: center; }
+
+.h span {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 169px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 10px;
+  color: red; }
+
+.b-account {
+  width: 300px;
+  margin: 0 auto; }
+
+.vamc {
+  border: none;
+  color: #333333;
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 0px;
+  vertical-align: middle;
+  width: 100%;
+  vertical-align: middle; }
+
+.vam, .vamc {
+  border: medium none;
+  background: transparent none repeat scroll 0% 0%;
+  cursor: text;
+  color: #cccccc; }
+
+.vamcc {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #cccccc;
+  color: #333333;
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 0px;
+  vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: 5px; }
+
+.user-input-tr {
+  width: 100%; }
+
+.b-account-table {
+  width: 80%; }
+
+.b-account-p {
+  margin-top: 15px;
+  margin-left: 10px; }
+
+.b-account-p span {
+  margin-left: 10px;
+  color: black;
+  font-size: 14px; }
+
+.button-login {
+  width: 280px;
+  line-height: 44px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 26px;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #B40707;
+  color: #fff;
+  margin-left: 10px; }
+
+.mt-links {
+  width: 280px;
+  overflow: hidden; }
+
+.mt-links p {
+  float: right;
+  margin-top: 30px;
+  font-size: 14px; }
+
+.mt-links p a {
+  color: blue;
+  text-decoration: none; }
+
+.mt-links-float {
+  padding: 10px 80px; }
+
+.mt-links-float span {
+  padding-top: 10px;
+  font-size: 14px; }
+
+.mt-links-float a {
+  color: blue;
+  text-decoration: none; }
+
+.thirdLoginBlock {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  color: #999;
+  line-height: 16px; }
+
+.thirdLintTitle {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 10px; }
+
+.line-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: url(../images/thirdLine-reverse.png) no-repeat;
+  height: 1px;
+  width: 80px;
+  background-size: cover; }
+
+.third-tips {
+  color: #cccccc;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 190px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 0 10px;
+  line-height: 1.5; }
+
+.line-right {
+  right: 0;
+  bottom: 50%;
+  background: url(../images/thirdLine-reverse.png) no-repeat;
+  height: 1px;
+  position: absolute;
+  width: 80px;
+  background-size: cover; }
+
+.thirdLoginDiv {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.qqLogin_bigTco {
+  padding: 0px 10px;
+  text-align: center;
+  display: inline-block; }
+
+.qqLogin_bigTco a {
+  background: url(../images/third_login.png) no-repeat;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  float: none;
+  background-position: -72px -9px; }
+
+.qqLogin_bigTco a:hover {
+  background-position: -72px -55px; }
+
+.alipayLogin_bigIco {
+  padding: 0px 10px;
+  text-align: center;
+  display: inline-block; }
+
+.alipayLogin_bigIco a {
+  background: url(../images/third_login.png) no-repeat -132px -9px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  float: none; }
+
+.alipayLogin_bigIco a:hover {
+  background-position: -132px -55px; }
+
+.weixinLogin_bigIco a {
+  background: url(../images/third_login.png) no-repeat -12px -9px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  float: none; }
+
+.weixinLogin_bigIco a:hover {
+  background-position: -12px -55px; }
+
+.weixinLogin_bigIco {
+  padding: 0px 10px;
+  text-align: center;
+  display: inline-block; }
