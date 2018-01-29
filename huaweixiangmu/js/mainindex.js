@@ -10,6 +10,7 @@ require.config({
         "jquery-cookie": "jquery.cookie",
         "index": "index",
         "slide": "slide",
+        "register": "register",
         "parabola": "parabola"
     },
     shim: {
@@ -22,9 +23,9 @@ require.config({
             exports: "_"
         },
         //设置依赖关系
-        "jquery-cookie": ["jquery"],
         "parabola": ["jquery"],
-        "slide": ["jquery"]
+        "slide": ["jquery"],
+        "jquery-cookie": ["jquery"]
     }
 })
 

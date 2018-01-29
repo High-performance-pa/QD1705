@@ -9,8 +9,11 @@ require.config({
 		"jquery": "jquery-1.11.3", //遵从AMD规范
 		"jquery-cookie": "jquery.cookie",
 		"enter": "enter",
-
-		"parabola": "parabola"
+		"register": "register",
+		"parabola": "parabola",
+		"bootstrap": "bootstrap",
+		"spxq": "spxq",
+		"shop": "shop"
 	},
 	shim: {
 		/*
@@ -22,6 +25,7 @@ require.config({
 			exports: "_"
 		},
 		//设置依赖关系
+		"bootstrap": ["jquery"],
 		"jquery-cookie": ["jquery"],
 		"parabola": ["jquery"]
 	}
@@ -32,12 +36,19 @@ require.config({
 //要去调用index.js中的main
 
 //调用slide.js 中的 slide函数
-require(["slide"], function(slide){
-	console.log(slide.slide());
-})
+
 
 require(["enter"], function(enter){
 	console.log(enter.main());
+})
+require(["register"], function(register){
+    console.log(register.register());
+})
+require(["spxq"], function(spxq){
+    console.log(spxq.spxq());
+})
+require(["shop"], function(shop){
+    console.log(shop.shop());
 })
 
 

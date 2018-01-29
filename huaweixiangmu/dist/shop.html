@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/shop.min.css">
+        <script type = "text/javascript" src = "js/require.js" async = "true" defer data-main = "js/main"></script>
+    </head>
+<body>
+    <div class = "head">
+        <div class = "list">
+            <ul class = "listleft">
+                <li><a href="http://consumer.huawei.com/cn/" target = "_blank">华为官网</a></li>
+                <li><a href="">荣耀官网</a></li>
+                <li><a href="">花粉俱乐部</a></li>
+                <li><a href="">帮助中心</a></li>
+                <li><a href="">v码(优购码)</a></li>
+                <li><a href="">企业购</a></li>
+                <li><a href="">Select Region</a></li>
+                <li id = "listleft-hover-last">
+                    <a href="">更多精彩</a>
+                    <div class = "hoverlist" id = "hoverlist">
+                        <div class = "hoverlisttop">
+                            <p><a href="">EMUI</a></p>
+                            <p><a href="">应用市场</a></p>
+                            <p><a href="">华为终端云空间</a></p>
+                            <p><a href="">开发者联盟</a></p>
+                            <p><a href="">EMUI</a></p>
+                        </div>
+                        <div class = "hoverlistb">
+                            <img src="images/qrcode_vmall_new_app01.png" >
+                            <p><span>扫一扫，</span><a href="">下载客户端</a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class = "listright">
+                <li><a href="">请登录</a></li>
+                <li><a href="">注册</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">购物车<span>(</span><span>0</span><span>)</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class = "header order-header">
+        <div class = "layout">
+            <div class = "left">
+                <div class = "logo logo-word">
+                    <a href="#">
+                        <img src="../images/20170703105852645577.png" >
+                    </a>
+                    <span>我的购物车</span>
+                </div>
+            </div>
+            <div class = "right">
+                <div class = "progress-area progress-area-3" >
+                    <div class = "progress-sc-area hide" id = "progress-cart" style = "display:block">
+                        我的购物车
+                    </div>
+                    <div class = "progress-co-area hide" id = "progress-confirm" style = "display:none">
+                        填写核对订单信息
+                    </div>
+                    <div class = "progress-sso-area hide" id = "progress-submit" style = "display:none">
+                        成功提交订单
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class = "layout">
+        <div id = "login-prompt-cart" class = "login-prompt">您还没有登录！登录后可查看之前加入的商品
+            <a href="enter.html" id = "top-index-loginUrl">登录</a>
+        </div>
+        <div class = "hr-20"></div>
+        <div id = "whole-prompt-coupon" class = "whole-prompt" style = "">
+            您有优惠券可领
+            <span id = "couponBtn">
+                <a href="#" class = "whole-prompt-link">点击领取</a>
+            </span>
+        </div>
+        <div class = "hr-20"></div>
+        <div class = "sc-list">
+            <div id = "shopping-cart-product-list" class = "sc-pro-title clearfix">
+                <label>
+                    <i id = "checkAll-top" class = "icon-choose-normal icon-choose icon-choose-all"></i>
+                    全选
+                </label>
+                <ul class = "clearfix">
+                    <li>商品</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>小计</li>
+                    <li>操作</li>
+                </ul>
+            </div>
+            <form action="" id= "cart-form" autocomplete = "off" method = "get">
+                <div id = "cart-list">
+                    <div class = "sc-pro">
+                        <div id = "order-pro-98670947" class = "sc-pro-list clearfix" datavalue = "2601010005802">
+
+                            <!-- <div id = "sc-pro-area-98670947" class = "sc-pro-area ">
+                                <i id  = "icon-choose-98670947" class = "icon-choose-normal icon-choose" name = "skuIds"></i>
+                                <div class = "sc-pro-main clearfix">
+                                    <a href="#" class = "p-img">
+                                        <img src="../images/s1.jpg" alt="">
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class = "p-name">
+                                                ppppp1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class = "p-price">
+                                                <span>￥1299.00</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class ="p-stock-area">
+                                                <input type="text" id = "quantity-98670947" class = "p-stock-text" value="3">
+                                                <p id = "p-stock-btn-area" class = "p-stock-btn">
+                                                    <a href="#" id ="pro-quantity-plus">+</a>
+                                                    <a href="#" id = "pro-quantity-minus" class = "disable">-</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li id = "p-price-total-98670947" class = "p-price-total">3879</li>
+                                        <li>
+                                            <a href="#" class = "p-del">删除</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+ <!--                                <div id = "extend-98670947" name = "extendIds"></div>
+                                <div id = "accident-98670947" name = "accidentIds"></div>
+                                <div class = "sc-pro-parts">
+                                    <div id = "cart-service-98670947" class = "sc-pro-parts-list clearfix p-service-area">
+                                        <h2>服务</h2>
+                                        <div class = "p-service-main clearfix">
+                                            <ul id = "accidentSelect-98670947" class ="">
+                                                <li>
+                                                    <div class = "p-service-info mousedown">
+                                                        <div id ="accidentSelect-a-98670947" class = "p-name disabled">
+                                                            <i>碎屏保</i>
+                                                            可选碎屏保
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+ -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id = "center_balance" class = "">
+        <div id = "cart-total-area" class = "sc-total-tool layout clearfix ">
+            <div class = "sc-total-control">
+                <label>
+                    <i id = "checkAll-buttom" class = "icon-choose-normal icon-choose-all"></i>
+                    全选
+                </label>
+                <a href="#">删除</a>
+            </div>
+            <div class = "sc-total-btn ">
+                <a href="#">立即结算</a>
+            </div>
+            <div class = "sc-total-price">
+                <p>
+                    <label>总计</label>
+                    <span id = "sc-cartInfo-totalOriginalPrice">000</span>
+                    <em></em>
+                </p>
+                <div class = "total-choose">
+                    已选择
+                    <em id = "totalNumber">0</em>
+                    件商品：
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

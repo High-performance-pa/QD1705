@@ -199,21 +199,219 @@ define(["jquery", "jquery-cookie"], function($){
 
                 }
             })
-            // var iNow = 0;
-            // $("#btnleft").click(function(){
-            //     iNow ++;
-            //     $("#changgungun").animate({
-            //         left: -100 * iNow,
-            //         opacity: 1
-            //     },500,function(){
-            //         if(iNow >= $("#changgungun").width()){
-            //             $("#changgungun").css("right", 0);
-            //             iNow = 0; //重置
-            //         }
-            //     })
-            // $("#btnright").click(function(){
-            //     $("#changgungun").css("left","-160px")
-            // })
+            var iNow = 0;
+            $("#btnleft").click(function(){
+                iNow++;
+                $("#changgungun").css(
+                    "right", "-2 * iNow"
+                    )
+                // },500,function(){
+                //     if(iNow >= $("#changgungun").width()){
+                //         $("#changgungun").css("right", 0);
+                //         iNow = 0; //重置
+                //     }
+                })
+            $("#btnright").click(function(){
+                $("#changgungun").css("left","-160px")
+            })
+            $.ajax({
+                url: "../data/sp6.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-md">
+                            <a href="#" class = "thumb">
+                                <img src="../images/baitu.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $(".goods-list").find("ul").html(html);
+
+                }
+            })
+            $.ajax({
+                url: "../data/sp4.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-md">
+                            <a href="#" class = "thumb">
+                                <img src="../images/heitu.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $("#bjbdn").html(html);
+
+                }
+            })
+
+            $.ajax({
+                url: "../data/sp5.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-md">
+                            <a href="#" class = "thumb">
+                                <img src="../images/lantu.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $("#jppb").html(html);
+
+                }
+            })
+            $.ajax({
+                url: "../data/sp6.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-md">
+                            <a href="#" class = "thumb">
+                                <img src="../images/sb.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $("#zncd").html(html);
+
+                }
+            })
+            $.ajax({
+                url: "../data/sp7.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-lg">
+                            <a href="#" class = "thumb">
+                                <img src="../images/znjj.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $("#znjj").html(html);
+
+                }
+            })
+            $.ajax({
+                url: "../data/sp7.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-lg">
+                            <a href="#" class = "thumb">
+                                <img src="../images/ryyy.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $("#rxpj").html(html);
+
+                }
+            })
+            $.ajax({
+                url: "../data/sp7.json",
+                type: "GET",
+                success: function(res){
+                    var html = `<li class = "grid-items grid-items-lg">
+                            <a href="#" class = "thumb">
+                                <img src="../images/xgxx.jpg">
+                            </a>
+                        </li>`;
+
+                    for(var i = 0; i < res.length; i++){
+                        html += `
+                        <li class = "grid-items">
+                            <a href="#" class = "thumb">
+                                <p class = "grid-img">
+                                    <img src="${res[i].img1}" >
+                                </p>
+                                <div class = "grid-title">${res[i].p1}</div>
+                                <p class = "grid-desc">${res[i].p2}</p>
+                                <p class = "grid-price">${res[i].d1}</p>
+                            </a>
+                        </li>
+`;
+                    }
+                    $("#pppj").html(html);
+
+                }
+            })
+
         })
     }
     return {

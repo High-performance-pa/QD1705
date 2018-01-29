@@ -54,6 +54,33 @@ gulp.task("scss-enter", () => {
 // // 	.pipe(gulp.dest("dist/css"))
 // // 	.pipe(connect.reload());
 // // })
+gulp.task("scss-register", () => {
+	return gulp.src("scss/register.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minify())
+	.pipe(rename("register.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+gulp.task("scss-spxq", () => {
+	return gulp.src("scss/spxq.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minify())
+	.pipe(rename("spxq.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+gulp.task("scss-shop", () => {
+	return gulp.src("scss/shop.scss")
+	.pipe(scss())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minify())
+	.pipe(rename("shop.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 
 // // /*
 // // 	拷贝js文件
@@ -77,7 +104,7 @@ gulp.task("data", () => {
 
 // // //上述操作都是整理文件的，作为整体，建立项目的整体，让他们一起执行。
 
-gulp.task("build", ["copy-html", "images", "scripts", "data", "scss-enter", "scss-index"], () => {
+gulp.task("build", ["copy-html", "images", "scripts", "data", "scss-enter", "scss-index","scss-register","scss-spxq","scss-shop"], () => {
 	console.log("编译成功");
 })
 
@@ -96,6 +123,9 @@ gulp.task("watch", function(){
 	gulp.watch("data/*.json", ["data"]);
 	gulp.watch("scss/enter.scss", ["scss-enter"])
 	gulp.watch("scss/index.scss", ["scss-index"])
+	gulp.watch("scss/register.scss", ["scss-register"])
+	gulp.watch("scss/spxq.scss", ["scss-spxq"])
+	gulp.watch("scss/shop.scss", ["scss-shop"])
 	// gulp.watch("scss/slide.scss", ["scss-slide"])
 })
 
